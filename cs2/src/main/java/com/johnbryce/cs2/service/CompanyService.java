@@ -115,22 +115,4 @@ public class CompanyService extends ClientService {
 		return companyRepository.findByEmailAndPassword(email, password).getId();
 	}
 
-//	private Coupon getOneCoupon(int couponID) {
-//		return couponsRepository.getOne(couponID);
-//	}
-//
-//	private Coupon getOneCouponV2(int companyID) {
-//		return couponsRepository.findByCompanyID(companyID);
-//	}
-
-//	public void updateCoupon(Coupon coupon) throws UnableToUpdateException {
-//	if (getOneCoupon(coupon.getId()) == null) {
-//		throw new UnableToUpdateException("Coupon's id can not be updated");
-//	}
-//	if (getOneCouponV2(coupon.getCompanyID()) == null) {
-//		throw new UnableToUpdateException("Coupon's companyID can not be updated");
-//	}
-//	couponsRepository.saveAndFlush(coupon);
-//}
-
 }
