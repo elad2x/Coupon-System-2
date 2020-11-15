@@ -114,25 +114,4 @@ public class AdministratorService extends ClientService {
 		return customerRepository.getOne(customerID);
 	}
 
-//	public void updateCompany(Company company) throws UnableToUpdateException {
-//	if (getOneCompany(company.getId()) == null) {
-//		throw new UnableToUpdateException("Updating company's id is unpermitted");
-//	}
-//	if (getOneCompany(company.getName()) == null) {
-//		throw new UnableToUpdateException("Updating company's name is unpermitted");
-//	}
-//	companyRepository.saveAndFlush(company);
-//}
-
-//	public void updateCustomer(Customer customer) throws UnableToUpdateException {
-//	if (getOneCustomer(customer.getId()) == null) {
-//		throw new UnableToUpdateException("Customer's id can't be updated");
-//	}
-//	customerRepository.saveAndFlush(customer);
-//}
-
-//	public Company getOneCompany(String name) {
-//	return companyRepository.findByName(name);
-//}
-
 }
