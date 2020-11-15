@@ -168,10 +168,6 @@ public class AdministratorServiceTesting implements CommandLineRunner {
 		System.out.println("[========Delete company========]");
 		administratorService.deleteCompany(company3.getId());
 		space();
-//		System.out.println("--------Companies after delete--------");
-//		System.out.println(administratorService.getAllCompanies());
-//		System.out.println("--------Restore deleted company--------");
-//		administratorService.addCompany(company3);;
 
 		// get all customers
 		System.out.println("[========All customers========]");
@@ -187,10 +183,6 @@ public class AdministratorServiceTesting implements CommandLineRunner {
 		System.out.println("[========Delete customer========]");
 		administratorService.deleteCustomer(customer3.getId());
 		space();
-//		System.out.println("--------Customers after delete--------");
-//		System.out.println(administratorService.getAllCustomers());
-//		System.out.println("--------Restore deleted company--------");
-//		administratorService.addCustomer(customer3);
 
 	}
 
