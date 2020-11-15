@@ -127,9 +127,6 @@ public class CompanyServiceTesting implements CommandLineRunner {
 		companyService.deleteCoupon(coupon7.getId());
 		space();
 
-//		System.out.println("***********get company id*********");
-//		System.out.println(companyService.getIdFromDB("one@mail", "1111"));
-//	
 	}
 
 	public void space() {
