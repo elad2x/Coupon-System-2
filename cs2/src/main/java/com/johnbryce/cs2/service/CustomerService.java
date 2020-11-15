@@ -3,9 +3,7 @@ package com.johnbryce.cs2.service;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
-
 import org.springframework.stereotype.Service;
-
 import com.johnbryce.cs2.beans.Category;
 import com.johnbryce.cs2.beans.Coupon;
 import com.johnbryce.cs2.beans.Customer;
@@ -18,9 +16,9 @@ import lombok.Data;
 @Service
 @Data
 public class CustomerService extends ClientService {
-
+	
 	private int customerID;
-
+	
 	@Override
 	public boolean login(String email, String password) throws BadLoginException {
 		if (customerRepository.existsCustomerByEmailAndPassword(email, password) == false) {
