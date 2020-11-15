@@ -101,7 +101,6 @@ public class AdministratorService extends ClientService {
 	}
 
 	public void deleteCustomer(int customerID) {
-		// customer.getCoupons().clear();
 		couponsRepository.deleteCouponPurchaseByCustomerID(customerID);
 		customerRepository.deleteById(customerID);
 	}
